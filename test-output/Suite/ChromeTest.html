@@ -1,0 +1,698 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/38</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 14 14:46:27 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3113 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.getscreenshot(GenericClass.java:1022)
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login(SeasonsAttributeTest.java:65)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11131233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11131233'><pre>java.lang.NullPointerException
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.getscreenshot(GenericClass.java:1022)
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login(SeasonsAttributeTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Login()'><b>Login</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.Close_Br()'><b>Close_Br</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2320_9244()'><b>HMS2320_9244</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify navigation to the Seasons attribute page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2322()'><b>HMS2322</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check whether 'Season attribute page' is being displayed or not.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2323_9246()'><b>HMS2323_9246</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: Saving a new season attribute through 'Add a season attribute' button on the season attribute list page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2324()'><b>HMS2324</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify 'ADD A SEASON ATTRIBUTE' without Title.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2325()'><b>HMS2325</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the functionality of the 'Cancel' button on the 'Add/Edit  a Season Attribute' window.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2326()'><b>HMS2326</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify 'DELETE SELECTED SEASONS ATTRIBUTE(S)' button on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2327()'><b>HMS2327</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify CANCEL button on 'Seasons Attribute List' Page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2328()'><b>HMS2328</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify Main Link in Seasons Attribute List Page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2329()'><b>HMS2329</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify the down arrow for Sorting on the basis of 'Seasons Attribute Name'.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2330()'><b>HMS2330</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the functionality of the 'Down' Arrow for Sorting on the basis of Status on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2331()'><b>HMS2331</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify Edit a Season Attribute</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2332()'><b>HMS2332</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify Audit Trail on 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2333()'><b>HMS2333</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify Page in Seasons Attribute List</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2334()'><b>HMS2334</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify View in Seasons Attribute List</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2336()'><b>HMS2336</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify 'Previous' link on the 'Seasons Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2338()'><b>HMS2338</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify Activate Seasons Attribute.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2339()'><b>HMS2339</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify Deactivate Seasons Attribute that are attached with the season(s).</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2340()'><b>HMS2340</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify De-Activate Seasons Attribute.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2341()'><b>HMS2341</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify Select functionality of mastercheckbox on 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2342()'><b>HMS2342</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify DELETE SELECTED SEASON ATTRIBUTE(S) for attributes attached with Season</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2343()'><b>HMS2343</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify ADD A SEASON ATTRIBUTE with Duplicate Data.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6578()'><b>HMS6578</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check whether all the buttons/links are displaying or not on 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6580()'><b>HMS6580</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the functionality of the 'Add a Season Attribute' button on the 'Season Attribute list' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6583()'><b>HMS6583</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: Checking the validation popup of the 'DELETE SELECTED SEASON ATTRIBUTE(S)' button on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6584()'><b>HMS6584</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: Checking the functionality of the 'Cancel' button which appears on clicking 'DELETE SELECTED SEASON ATTRIBUTE(S)' button on 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6585()'><b>HMS6585</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the functionality of the 'Up' Arrow for Sorting on the basis of Season Attribute Name on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6586()'><b>HMS6586</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the functionality of the 'Up' Arrow for Sorting on the basis of 'Status' on the 'Season attribute list' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6588()'><b>HMS6588</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: Checking the functionality of the 'Edit' link on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6591()'><b>HMS6591</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: Checking the validation on the 'Title' textbox on editing a season attribute on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6593()'><b>HMS6593</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the functionality of the 'Cancel button which appears on clicking the 'Edit ' link on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6595()'><b>HMS6595</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: Checking the Status on adding a new season attribute on the 'Season Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6603()'><b>HMS6603</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the navigation functionality of dropdownlist of number of pages on the 'Season attribute list' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6608()'><b>HMS6608</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To check the visibility of the 'Previous' and 'Next' navigation links on the 'Season attribute list' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS7874()'><b>HMS7874</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify whether attribute's checkboxes gets unchecked or not when selected master checkbox is unchecked on 'Seasons Attribute List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS7882()'><b>HMS7882</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify whether alert pop-up appears or not when 'All' is selected from 'View records per page' drop down on 'Season List' page.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS7883()'><b>HMS7883</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify whether user is able to view all Season Attributes on one page or not when 'OK' button of  view 'All' records alert message is clicked.</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS7884()'><b>HMS7884</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify the functionality of 'Cancel' button of alert message when 'All' is selected from 'View records per page' drop down</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS9249()'><b>HMS9249</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest<br>Test method: To verify 'Next' link on the 'Seasons Attribute List' page</td>
+<td></td>
+<td>0</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@38203</td></tr>
+</table><p>
+</body>
+</html>

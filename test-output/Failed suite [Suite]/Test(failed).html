@@ -1,0 +1,1980 @@
+<html>
+<head>
+<title>TestNG:  Test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>46/27/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 05 13:30:49 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>4053 seconds (4053897 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS1719()'><b>HMS1719</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.hms.hotelogix.automationframework.pages.admin.PriceManager.FrontdeskPackage.PackageDetailsFrontDesk.verify_DeactiveRTName(PackageDetailsFrontDesk.java:176)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS1719(RoomTypeTest.java:1961)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5148919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5148919'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at org.testng.Assert.assertFalse(Assert.java:73)
+	at com.hms.hotelogix.automationframework.pages.admin.PriceManager.FrontdeskPackage.PackageDetailsFrontDesk.verify_DeactiveRTName(PackageDetailsFrontDesk.java:176)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS1719(RoomTypeTest.java:1961)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>52</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS1720()'><b>HMS1720</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.hms.hotelogix.automationframework.pages.admin.RoomManager.RoomTypes.RoomTypesLandingPage.clk_DeactiveReservedRT(RoomTypesLandingPage.java:1705)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS1720(RoomTypeTest.java:2077)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24020886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24020886'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at org.testng.Assert.assertFalse(Assert.java:73)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomManager.RoomTypes.RoomTypesLandingPage.clk_DeactiveReservedRT(RoomTypesLandingPage.java:1705)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS1720(RoomTypeTest.java:2077)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>16</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest.HMS1936()'><b>HMS1936</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest.HMS1936(NotesTest.java:624)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23593479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23593479'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest.HMS1936(NotesTest.java:624)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>14</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest@1774679</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest.HMS1946()'><b>HMS1946</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest<br/>
+<a href="#Output-24777099" onClick='toggleBox("Output-24777099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24777099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24777099">
+As of now, this functionality is not working as per test case.<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoAlertPresentException: No alert is present (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.13 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3836db80-7439-4f86-ad31-51ace2a408c4
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1049)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.Alert_Dismiss(GenericClass.java:151)
+	at com.hms.hotelogix.automationframework.pages.admin.General.Notes.NotesListLandingPage.fn_clkDeleteSelectedNote(NotesListLandingPage.java:362)
+	at com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest.HMS1946(NotesTest.java:1009)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24777099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24777099'><pre>org.openqa.selenium.NoAlertPresentException: No alert is present (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.13 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3836db80-7439-4f86-ad31-51ace2a408c4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1049)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.Alert_Dismiss(GenericClass.java:151)
+	at com.hms.hotelogix.automationframework.pages.admin.General.Notes.NotesListLandingPage.fn_clkDeleteSelectedNote(NotesListLandingPage.java:362)
+	at com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest.HMS1946(NotesTest.java:1009)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest@1774679</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2327()'><b>HMS2327</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2327(SeasonsAttributeTest.java:528)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9309676", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9309676'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2327(SeasonsAttributeTest.java:528)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@5792a0</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS5904()'><b>HMS5904</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (997.5, 24.066665649414062). Other element would receive the click: &lt;div style=&quot;z-index: 3; height: 913px; width: 1280px; display: block;&quot; id=&quot;PanelModalWait_mask&quot; class=&quot;mask&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 71 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59eed3c8-399d-434f-b613-e6defe5a2edd
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.clickElement(GenericClass.java:421)
+	at com.hms.hotelogix.automationframework.pages.Web.WebConsole.WebReservationHomePage.fn_NavigateToTAConsole(WebReservationHomePage.java:53)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS5904(DisplayColorsTest.java:1089)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10890983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10890983'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (997.5, 24.066665649414062). Other element would receive the click: &lt;div style=&quot;z-index: 3; height: 913px; width: 1280px; display: block;&quot; id=&quot;PanelModalWait_mask&quot; class=&quot;mask&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 71 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59eed3c8-399d-434f-b613-e6defe5a2edd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.clickElement(GenericClass.java:421)
+	at com.hms.hotelogix.automationframework.pages.Web.WebConsole.WebReservationHomePage.fn_NavigateToTAConsole(WebReservationHomePage.java:53)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS5904(DisplayColorsTest.java:1089)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>109</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5909()'><b>HMS5909</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td/select[@name=&apos;maxEntries&apos;]&quot;}
+Command duration or timeout: 70.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77244e24-c0d0-4f4b-99b5-4783befde9a4
+*** Element info: {Using=xpath, value=//td/select[@name=&apos;maxEntries&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.selectElement(GenericClass.java:482)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomManager.RoomTypes.RoomTypesLandingPage.fn_viewAll(RoomTypesLandingPage.java:547)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5909(RoomTypeTest.java:479)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td/select[@name=&apos;maxEntries&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous9122026972389528427webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous9122026972389528427webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25344912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25344912'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td/select[@name=&apos;maxEntries&apos;]&quot;}
+Command duration or timeout: 70.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 77244e24-c0d0-4f4b-99b5-4783befde9a4
+*** Element info: {Using=xpath, value=//td/select[@name=&apos;maxEntries&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.selectElement(GenericClass.java:482)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomManager.RoomTypes.RoomTypesLandingPage.fn_viewAll(RoomTypesLandingPage.java:547)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5909(RoomTypeTest.java:479)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td/select[@name=&apos;maxEntries&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous9122026972389528427webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous9122026972389528427webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>91</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5914()'><b>HMS5914</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;btnSrShowEditDetails&apos;]&quot;}
+Command duration or timeout: 70.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 47677993-85fe-4ba1-adb2-7664a5869c50
+*** Element info: {Using=xpath, value=//span[@id=&apos;btnSrShowEditDetails&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.clickElement(GenericClass.java:421)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_ReservWithTax(FrontdeskLandingPage.java:1727)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5914(RoomTypeTest.java:973)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;btnSrShowEditDetails&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous7538509977461090090webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous7538509977461090090webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11159958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11159958'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;btnSrShowEditDetails&apos;]&quot;}
+Command duration or timeout: 70.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 47677993-85fe-4ba1-adb2-7664a5869c50
+*** Element info: {Using=xpath, value=//span[@id=&apos;btnSrShowEditDetails&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.clickElement(GenericClass.java:421)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_ReservWithTax(FrontdeskLandingPage.java:1727)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5914(RoomTypeTest.java:973)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id=&apos;btnSrShowEditDetails&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous7538509977461090090webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous7538509977461090090webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>177</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5916()'><b>HMS5916</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest</td>
+<td><div><pre>java.lang.AssertionError: expected [- Room Type(s) &quot;nzjIu&quot; deleted successfully] but found [- Room Type(s) &quot;nzjIu&quot; saved successfully]
+	at com.hms.hotelogix.automationframework.pages.admin.RoomManager.RoomTypes.RoomTypesLandingPage.verify_DeleteRoomTypeMsg(RoomTypesLandingPage.java:862)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5916(RoomTypeTest.java:1083)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24939646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24939646'><pre>java.lang.AssertionError: expected [- Room Type(s) &quot;nzjIu&quot; deleted successfully] but found [- Room Type(s) &quot;nzjIu&quot; saved successfully]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomManager.RoomTypes.RoomTypesLandingPage.verify_DeleteRoomTypeMsg(RoomTypesLandingPage.java:862)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5916(RoomTypeTest.java:1083)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>56</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6367()'><b>HMS6367</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (330, 657.2999877929688). Other element would receive the click: &lt;div style=&quot;z-index: 3; height: 1141px; width: 1263px; display: block;&quot; id=&quot;PanelModalWait_mask&quot; class=&quot;mask&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 66 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5a59b36c-356e-4a6b-bd9f-aee9cd3e3e73
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.clickElement(GenericClass.java:421)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontdeskPOS.SampleRestaurant.ConfirmOrderPage1.fn_VerifyPayNowButton(ConfirmOrderPage1.java:32)
+	at com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6367(InvoiceNumberSettingsTest.java:1958)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19008459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19008459'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (330, 657.2999877929688). Other element would receive the click: &lt;div style=&quot;z-index: 3; height: 1141px; width: 1263px; display: block;&quot; id=&quot;PanelModalWait_mask&quot; class=&quot;mask&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 66 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5a59b36c-356e-4a6b-bd9f-aee9cd3e3e73
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.clickElement(GenericClass.java:421)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontdeskPOS.SampleRestaurant.ConfirmOrderPage1.fn_VerifyPayNowButton(ConfirmOrderPage1.java:32)
+	at com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6367(InvoiceNumberSettingsTest.java:1958)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>81</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6388()'><b>HMS6388</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.pages.admin.General.InvoiceNumberSettings.AuditTrailINS.verify_pageHeader(AuditTrailINS.java:31)
+	at com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6388(InvoiceNumberSettingsTest.java:2732)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5078902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5078902'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.hms.hotelogix.automationframework.pages.admin.General.InvoiceNumberSettings.AuditTrailINS.verify_pageHeader(AuditTrailINS.java:31)
+	at com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6388(InvoiceNumberSettingsTest.java:2732)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>21</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6608()'><b>HMS6608</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4f42948a-e718-45e9-acf7-1ab4d64df6a1
+*** Element info: {Using=xpath, value=//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.checkElementDisplay(GenericClass.java:464)
+	at com.hms.hotelogix.automationframework.pages.admin.PriceManager.SeasonaAttribute.SeasonsAttributeLP.fn_verifyPrevNextLnk(SeasonsAttributeLP.java:515)
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6608(SeasonsAttributeTest.java:1082)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous5132995414828365406webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous5132995414828365406webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29218136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29218136'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4f42948a-e718-45e9-acf7-1ab4d64df6a1
+*** Element info: {Using=xpath, value=//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.checkElementDisplay(GenericClass.java:464)
+	at com.hms.hotelogix.automationframework.pages.admin.PriceManager.SeasonaAttribute.SeasonsAttributeLP.fn_verifyPrevNextLnk(SeasonsAttributeLP.java:515)
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS6608(SeasonsAttributeTest.java:1082)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous5132995414828365406webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous5132995414828365406webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>77</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@5792a0</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS7884()'><b>HMS7884</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td><div><pre>java.lang.AssertionError: expected [28] but found [10]
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS7884(SeasonsAttributeTest.java:1178)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24742394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24742394'><pre>java.lang.AssertionError: expected [28] but found [10]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS7884(SeasonsAttributeTest.java:1178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>11</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@5792a0</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7935()'><b>HMS7935</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.Housekeeping.HousekeepingLandingPage.verify_CORColorCode(HousekeepingLandingPage.java:219)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7935(DisplayColorsTest.java:578)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3784644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3784644'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.Housekeeping.HousekeepingLandingPage.verify_CORColorCode(HousekeepingLandingPage.java:219)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7935(DisplayColorsTest.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>66</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7937()'><b>HMS7937</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_OverbookedColorCode(FrontdeskLandingPage.java:409)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7937(DisplayColorsTest.java:685)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20130590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20130590'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_OverbookedColorCode(FrontdeskLandingPage.java:409)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7937(DisplayColorsTest.java:685)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>52</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7941()'><b>HMS7941</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_InspectRColorCode(FrontdeskLandingPage.java:507)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7941(DisplayColorsTest.java:850)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2760621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2760621'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_InspectRColorCode(FrontdeskLandingPage.java:507)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7941(DisplayColorsTest.java:850)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>51</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7942()'><b>HMS7942</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_CleanRColorCode(FrontdeskLandingPage.java:540)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7942(DisplayColorsTest.java:905)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2219709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2219709'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_CleanRColorCode(FrontdeskLandingPage.java:540)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7942(DisplayColorsTest.java:905)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>53</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7943()'><b>HMS7943</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_RepairRColorCode(FrontdeskLandingPage.java:573)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7943(DisplayColorsTest.java:958)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27272352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27272352'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.verify_RepairRColorCode(FrontdeskLandingPage.java:573)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7943(DisplayColorsTest.java:958)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>51</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7945()'><b>HMS7945</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please Enter Company Name): Please Enter Company Name
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f2ebfe65-d02b-493c-9b5c-aeacdd8468cb
+*** Element info: {Using=css selector, value=div.rs-new}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_verifyReservation(FrontdeskLandingPage.java:1099)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7945(DisplayColorsTest.java:1166)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17666013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17666013'><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please Enter Company Name): Please Enter Company Name
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f2ebfe65-d02b-493c-9b5c-aeacdd8468cb
+*** Element info: {Using=css selector, value=div.rs-new}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_verifyReservation(FrontdeskLandingPage.java:1099)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7945(DisplayColorsTest.java:1166)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>105</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7946()'><b>HMS7946</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: 3
+	at com.hms.hotelogix.automationframework.pages.Web.WebConsole.WebConfirmReservationPrintPage.fn_GetReservID(WebConfirmReservationPrintPage.java:20)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7946(DisplayColorsTest.java:1248)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5918691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5918691'><pre>java.lang.ArrayIndexOutOfBoundsException: 3
+	at com.hms.hotelogix.automationframework.pages.Web.WebConsole.WebConfirmReservationPrintPage.fn_GetReservID(WebConfirmReservationPrintPage.java:20)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7946(DisplayColorsTest.java:1248)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>123</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7947()'><b>HMS7947</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter phone number.): Please enter phone number.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0f008780-6484-4df4-b836-481292a419cf
+*** Element info: {Using=css selector, value=div.rs-new}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_verifyReservation(FrontdeskLandingPage.java:1099)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7947(DisplayColorsTest.java:1312)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10516591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10516591'><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter phone number.): Please enter phone number.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0f008780-6484-4df4-b836-481292a419cf
+*** Element info: {Using=css selector, value=div.rs-new}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_verifyReservation(FrontdeskLandingPage.java:1099)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS7947(DisplayColorsTest.java:1312)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>100</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS8849()'><b>HMS8849</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos; yui-skin-sam&apos;]//table//tr[3]/td//tr[7]//table//tr[4]//table//tr[7]//td[3]/input&quot;}
+Command duration or timeout: 70.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19b5e244-8093-4420-a788-8baf8042408b
+*** Element info: {Using=xpath, value=//div[@class=&apos; yui-skin-sam&apos;]//table//tr[3]/td//tr[7]//table//tr[4]//table//tr[7]//td[3]/input}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.DisplayColors.DisplayColorsLandingPage.verifyTextbox_AlphabetCode(DisplayColorsLandingPage.java:337)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS8849(DisplayColorsTest.java:274)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos; yui-skin-sam&apos;]//table//tr[3]/td//tr[7]//table//tr[4]//table//tr[7]//td[3]/input&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous7066035045243726872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous7066035045243726872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24426472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24426472'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos; yui-skin-sam&apos;]//table//tr[3]/td//tr[7]//table//tr[4]//table//tr[7]//td[3]/input&quot;}
+Command duration or timeout: 70.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19b5e244-8093-4420-a788-8baf8042408b
+*** Element info: {Using=xpath, value=//div[@class=&apos; yui-skin-sam&apos;]//table//tr[3]/td//tr[7]//table//tr[4]//table//tr[7]//td[3]/input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.DisplayColors.DisplayColorsLandingPage.verifyTextbox_AlphabetCode(DisplayColorsLandingPage.java:337)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS8849(DisplayColorsTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos; yui-skin-sam&apos;]//table//tr[3]/td//tr[7]//table//tr[4]//table//tr[7]//td[3]/input&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous7066035045243726872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous7066035045243726872webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>79</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS8932()'><b>HMS8932</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter phone number.): Please enter phone number.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 806ae99f-df3d-48a1-b9fc-2633c684c435
+*** Element info: {Using=css selector, value=div.rs-new}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_verifyReservedAssigned(FrontdeskLandingPage.java:1480)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS8932(DisplayColorsTest.java:1445)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14247288", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14247288'><pre>org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Please enter phone number.): Please enter phone number.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 806ae99f-df3d-48a1-b9fc-2633c684c435
+*** Element info: {Using=css selector, value=div.rs-new}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.hms.hotelogix.automationframework.pages.Frontdesk.FrontDeskHomePage.FrontdeskLandingPage.fn_verifyReservedAssigned(FrontdeskLandingPage.java:1480)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest.HMS8932(DisplayColorsTest.java:1445)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>90</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest@1275dab</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9027()'><b>HMS9027</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form[@name=&apos;frmListView&apos;]//table//tr[2]/td&quot;}
+Command duration or timeout: 70.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 65d0d94a-3741-4bc5-8ecf-4d501c62f69c
+*** Element info: {Using=xpath, value=//form[@name=&apos;frmListView&apos;]//table//tr[2]/td}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.getText(GenericClass.java:204)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.verify_saveMultplExtsnMsg(PhoneExtensionsListPage.java:260)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9027(PhoneExtensionsTest.java:836)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form[@name=&apos;frmListView&apos;]//table//tr[2]/td&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous2728487953659997518webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous2728487953659997518webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13957063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13957063'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form[@name=&apos;frmListView&apos;]//table//tr[2]/td&quot;}
+Command duration or timeout: 70.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 65d0d94a-3741-4bc5-8ecf-4d501c62f69c
+*** Element info: {Using=xpath, value=//form[@name=&apos;frmListView&apos;]//table//tr[2]/td}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.GenericMethod.GenericClass.getText(GenericClass.java:204)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.verify_saveMultplExtsnMsg(PhoneExtensionsListPage.java:260)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9027(PhoneExtensionsTest.java:836)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form[@name=&apos;frmListView&apos;]//table//tr[2]/td&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous2728487953659997518webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous2728487953659997518webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>84</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9081()'><b>HMS9081</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6dc306b3-09f2-4a7e-b7ff-1f4af26d25ce
+*** Element info: {Using=xpath, value=//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isEnabled(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.fn_verifyDisabledNextLnk(PhoneExtensionsListPage.java:1063)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9081(PhoneExtensionsTest.java:1918)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous5956800134429984296webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous5956800134429984296webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30715587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30715587'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6dc306b3-09f2-4a7e-b7ff-1f4af26d25ce
+*** Element info: {Using=xpath, value=//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isEnabled(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.fn_verifyDisabledNextLnk(PhoneExtensionsListPage.java:1063)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9081(PhoneExtensionsTest.java:1918)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous5956800134429984296webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous5956800134429984296webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>87</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9082()'><b>HMS9082</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dfe546f2-18a2-41c4-a9f4-3888176af4d9
+*** Element info: {Using=xpath, value=//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isEnabled(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.fn_verifyDisabledNextLnk(PhoneExtensionsListPage.java:1063)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9082(PhoneExtensionsTest.java:1952)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous8252333602318030579webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous8252333602318030579webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4162907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4162907'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dfe546f2-18a2-41c4-a9f4-3888176af4d9
+*** Element info: {Using=xpath, value=//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isEnabled(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.fn_verifyDisabledNextLnk(PhoneExtensionsListPage.java:1063)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9082(PhoneExtensionsTest.java:1952)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list_viewnew&apos;]//table//tr//td/a[text()=&apos;Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous8252333602318030579webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous8252333602318030579webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>84</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9083()'><b>HMS9083</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fa9f0396-cff6-4ebc-80ad-94a824bc9565
+*** Element info: {Using=xpath, value=//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isEnabled(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.fn_clkPreviousLnk(PhoneExtensionsListPage.java:1083)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9083(PhoneExtensionsTest.java:1979)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous8111100755554268532webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous8111100755554268532webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15492088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15492088'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+Command duration or timeout: 70.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fa9f0396-cff6-4ebc-80ad-94a824bc9565
+*** Element info: {Using=xpath, value=//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.isEnabled(Unknown Source)
+	at com.hms.hotelogix.automationframework.pages.admin.RoomsManager.PhoneExtensions.PhoneExtensionsListPage.fn_clkPreviousLnk(PhoneExtensionsListPage.java:1083)
+	at com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9083(PhoneExtensionsTest.java:1979)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;&lt;&lt;Previous | Next&gt;&gt;&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;hms-update4&apos;, ip: &apos;192.168.2.115&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/qa/AppData/Local/Temp/anonymous8111100755554268532webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/qa/AppData/Local/Temp/anonymous8111100755554268532webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>78</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2331()'><b>HMS2331</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>100</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@5792a0</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2339()'><b>HMS2339</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>39</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@5792a0</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest.HMS2342()'><b>HMS2342</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest</td>
+<td></td>
+<td>38</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest@5792a0</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS5928()'><b>HMS5928</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest<br/>
+<a href="#Output-10520123" onClick='toggleBox("Output-10520123", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10520123" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10520123">
+When 'View' link displayed next to uploaded image on 'Edit Room Type' page is clicked,system displays uploaded image in a new tab.<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6357()'><b>HMS6357</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>251</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6368()'><b>HMS6368</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>95</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6369()'><b>HMS6369</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6370()'><b>HMS6370</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6371()'><b>HMS6371</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>92</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6372()'><b>HMS6372</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>94</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6373()'><b>HMS6373</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>95</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6374()'><b>HMS6374</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6375()'><b>HMS6375</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>9</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6376()'><b>HMS6376</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>11</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6377()'><b>HMS6377</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>9</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6378()'><b>HMS6378</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>9</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6381()'><b>HMS6381</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>13</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6382()'><b>HMS6382</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6383()'><b>HMS6383</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS6387()'><b>HMS6387</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>10</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS8860()'><b>HMS8860</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest</td>
+<td></td>
+<td>81</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest.HMS8865()'><b>HMS8865</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest</td>
+<td></td>
+<td>11</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest@1832929</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS8914()'><b>HMS8914</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>9</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS8915()'><b>HMS8915</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>9</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9061()'><b>HMS9061</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>31</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9062()'><b>HMS9062</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>32</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9063()'><b>HMS9063</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>12</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9064()'><b>HMS9064</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>8</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9065()'><b>HMS9065</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>15</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9066()'><b>HMS9066</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>15</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9067()'><b>HMS9067</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>33</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9068()'><b>HMS9068</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>12</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9069()'><b>HMS9069</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>11</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9074()'><b>HMS9074</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>15</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9075()'><b>HMS9075</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>15</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9076()'><b>HMS9076</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>11</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9077()'><b>HMS9077</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>12</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9078()'><b>HMS9078</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>11</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9079()'><b>HMS9079</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>11</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9080()'><b>HMS9080</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>14</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9084()'><b>HMS9084</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>17</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest.HMS9085()'><b>HMS9085</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest</td>
+<td></td>
+<td>18</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1fc5af1</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS9171()'><b>HMS9171</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>14</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS9172()'><b>HMS9172</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>16</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS9173()'><b>HMS9173</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>7</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+<tr>
+<td title='com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest.HMS9174()'><b>HMS9174</b><br>Test class: com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest</td>
+<td></td>
+<td>14</td>
+<td>com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest@cb5822</td></tr>
+</table><p>
+</body>
+</html>

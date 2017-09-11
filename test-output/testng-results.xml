@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32655" started-at="2017-08-31T06:20:45Z" finished-at="2017-08-31T06:21:18Z">
+    <groups>
+      <group name="P0">
+        <method signature="PhoneExtensionsTest.HMS9085()[pri:0, instance:com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1aeed2f]" name="HMS9085" class="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest"/>
+      </group> <!-- P0 -->
+      <group name="PhoneExtensionsTest">
+        <method signature="PhoneExtensionsTest.HMS9085()[pri:0, instance:com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1aeed2f]" name="HMS9085" class="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest"/>
+      </group> <!-- PhoneExtensionsTest -->
+    </groups>
+    <test name="Default test" duration-ms="32655" started-at="2017-08-31T06:20:45Z" finished-at="2017-08-31T06:21:18Z">
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1aeed2f]" name="Login" is-config="true" duration-ms="11369" started-at="2017-08-31T11:50:45Z" finished-at="2017-08-31T11:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="HMS9085()[pri:0, instance:com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1aeed2f]" name="HMS9085" duration-ms="20910" started-at="2017-08-31T11:50:57Z" description="To verify Audit Trail link in Phone Extension List page." finished-at="2017-08-31T11:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HMS9085 -->
+        <test-method status="PASS" signature="Close_Br()[pri:0, instance:com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest@1aeed2f]" name="Close_Br" is-config="true" duration-ms="363" started-at="2017-08-31T11:51:17Z" finished-at="2017-08-31T11:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_Br -->
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

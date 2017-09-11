@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest">
+        <methods>
+          <include name="HMS1670"/>
+          <include name="HMS5915"/>
+          <include name="HMS8869"/>
+          <include name="HMS1673"/>
+          <include name="HMS5910"/>
+          <include name="HMS1671"/>
+          <include name="HMS5912"/>
+          <include name="HMS8868"/>
+          <include name="HMS5914"/>
+          <include name="HMS1672"/>
+          <include name="HMS5913"/>
+          <include name="HMS5916"/>
+          <include name="HMS5918"/>
+          <include name="HMS5917"/>
+          <include name="HMS1719"/>
+          <include name="HMS1718"/>
+          <include name="HMS8862"/>
+          <include name="HMS1716"/>
+          <include name="HMS8861"/>
+          <include name="HMS8866"/>
+          <include name="HMS1717"/>
+          <include name="HMS8863"/>
+          <include name="HMS8860"/>
+          <include name="HMS1674"/>
+          <include name="HMS8865"/>
+          <include name="HMS8867"/>
+          <include name="HMS1675"/>
+          <include name="HMS8864"/>
+          <include name="Close_Br"/>
+          <include name="HMS5909"/>
+          <include name="HMS1705"/>
+          <include name="HMS1667"/>
+          <include name="HMS1668"/>
+          <include name="HMS1663"/>
+          <include name="HMS1669"/>
+          <include name="Login"/>
+          <include name="HMS1730"/>
+          <include name="HMS5930"/>
+          <include name="HMS5921"/>
+          <include name="HMS1720"/>
+          <include name="HMS5920"/>
+          <include name="HMS5923"/>
+          <include name="HMS5924"/>
+          <include name="HMS5928"/>
+          <include name="HMS8873"/>
+          <include name="HMS8870"/>
+          <include name="HMS1722"/>
+          <include name="HMS1723"/>
+          <include name="HMS8871"/>
+          <include name="HMS1721"/>
+          <include name="HMS1724"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.General.LoggedInUsers.LoggedInUsersTest">
+        <methods>
+          <include name="Login"/>
+          <include name="Close_Br"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.General.LoggedInUsers.LoggedInUsersTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.PriceManager.Seasons.SeasonTest">
+        <methods>
+          <include name="HMS2352"/>
+          <include name="CloseAPP"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.PriceManager.Seasons.SeasonTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest">
+        <methods>
+          <include name="Login"/>
+          <include name="HMS9180"/>
+          <include name="HMS6381"/>
+          <include name="HMS6382"/>
+          <include name="HMS6387"/>
+          <include name="HMS9172"/>
+          <include name="HMS9174"/>
+          <include name="HMS6383"/>
+          <include name="HMS9171"/>
+          <include name="HMS6367"/>
+          <include name="HMS6368"/>
+          <include name="HMS6388"/>
+          <include name="HMS6369"/>
+          <include name="HMS8915"/>
+          <include name="HMS9173"/>
+          <include name="Close_Br"/>
+          <include name="HMS6373"/>
+          <include name="HMS6370"/>
+          <include name="HMS6371"/>
+          <include name="HMS6354"/>
+          <include name="HMS6376"/>
+          <include name="HMS9188"/>
+          <include name="HMS6372"/>
+          <include name="HMS6359"/>
+          <include name="HMS6378"/>
+          <include name="HMS6357"/>
+          <include name="HMS8914"/>
+          <include name="HMS6377"/>
+          <include name="HMS6374"/>
+          <include name="HMS6353"/>
+          <include name="HMS6375"/>
+          <include name="HMS6358"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

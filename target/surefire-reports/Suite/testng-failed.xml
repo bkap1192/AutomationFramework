@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.PriceManager.Seasons.SeasonTest">
+        <methods>
+          <include name="HMS2359"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.PriceManager.Seasons.SeasonTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

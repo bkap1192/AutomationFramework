@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <test name="Test">
+    <classes>
+      
+     <!-- <class name="com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest"/>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest"/>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest"/>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest"/>-->
+      
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest"/>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest"/>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.General.LoggedInUsers.LoggedInUsersTest"/>
+  
+  
+  <class name="com.hms.hotelogix.automationframework.tests.admin.PriceManager.Seasons.SeasonTest"/>
+     </classes>
+  </test>     
+   
+   
+  <!-- <test name="ChromeTest">
+   <parameter name="browser" value="Chrome"/>
+   
+   <classes>
+   <class name="com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest"/>
+   </classes>
+   </test> -->
+  
+</suite> <!-- Suite -->

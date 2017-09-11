@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]">
+  <test name="Test(failed)(failed)">
+    <classes>
+      <class name="com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest">
+        <methods>
+          <include name="HMS6367"/>
+          <include name="HMS6388"/>
+          <include name="Login"/>
+          <include name="Close_Br"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.General.InvoiceNumberSettings.InvoiceNumberSettingsTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest">
+        <methods>
+          <include name="HMS7942"/>
+          <include name="HMS8932"/>
+          <include name="HMS7943"/>
+          <include name="Login"/>
+          <include name="Close_Br"/>
+          <include name="HMS5904"/>
+          <include name="HMS7945"/>
+          <include name="HMS7937"/>
+          <include name="HMS7941"/>
+          <include name="HMS7935"/>
+          <include name="HMS7946"/>
+          <include name="HMS7947"/>
+          <include name="HMS8849"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.RoomsManager.DisplayColors.DisplayColorsTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest">
+        <methods>
+          <include name="HMS1719"/>
+          <include name="HMS1720"/>
+          <include name="HMS5914"/>
+          <include name="HMS5916"/>
+          <include name="Close_Br"/>
+          <include name="HMS5909"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.RoomsManager.RoomTypes.RoomTypeTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest">
+        <methods>
+          <include name="Login"/>
+          <include name="Close_Br"/>
+          <include name="HMS1946"/>
+          <include name="HMS1936"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.General.Notes.NotesTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest">
+        <methods>
+          <include name="HMS9027"/>
+          <include name="Close_Br"/>
+          <include name="HMS9082"/>
+          <include name="HMS9081"/>
+          <include name="Login"/>
+          <include name="HMS9083"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.RoomsManager.PhoneExtensions.PhoneExtensionsTest -->
+      <class name="com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest">
+        <methods>
+          <include name="HMS7884"/>
+          <include name="Close_Br"/>
+          <include name="Login"/>
+          <include name="HMS2327"/>
+          <include name="HMS6608"/>
+        </methods>
+      </class> <!-- com.hms.hotelogix.automationframework.tests.admin.PriceManager.SeasonsAttribute.SeasonsAttributeTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
